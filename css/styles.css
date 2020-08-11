@@ -9,7 +9,15 @@
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+
+ Developed by Luis Feliciano
+
  */
+
+.coursework-list {
+  font-size: 1rem;
+}
+
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -446,10 +454,12 @@ mark,
 .list-inline {
   padding-left: 0;
   list-style: none;
+
 }
 
 .list-inline-item {
   display: inline-block;
+  font-size: 20px;
 }
 .list-inline-item:not(:last-child) {
   margin-right: 0.5rem;
@@ -2070,6 +2080,7 @@ select.form-control:focus::-ms-value {
   display: block;
   width: 100%;
 }
+
 
 .col-form-label {
   padding-top: calc(0.375rem + 1px);

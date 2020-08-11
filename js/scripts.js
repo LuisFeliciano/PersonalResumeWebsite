@@ -2,7 +2,34 @@
     * Start Bootstrap - Resume v6.0.0 (https://startbootstrap.com/template-overviews/resume)
     * Copyright 2013-2020 Start Bootstrap
     * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+
+Devevloped by Luis Feliciano
+
     */
+
+
+var spinnerVisible = false;
+$(document).ready(function() {
+  showSpinner()
+});
+
+function showSpinner() {
+  if (!spinnerVisible) {
+    $("div#spinner").fadeIn("fast");
+    spinnerVisible = true;
+  }
+  setTimeout(hideSpinner, 4000);
+};
+
+function hideSpinner() {
+  if (spinnerVisible) {
+    var spinner = $("div#spinner");
+    spinner.stop();
+    spinner.fadeOut("fast");
+    spinnerVisible = false;
+  }
+};
+
     (function ($) {
     "use strict"; // Start of use strict
 
@@ -40,3 +67,6 @@
         target: "#sideNav",
     });
 })(jQuery); // End of use strict
+
+
+
